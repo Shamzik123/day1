@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Функции</title>
+    
+    </head>
+    <body>
+        <h1>Функции</h1>
+        <button onclick="localStorage.setItem('check', 0);localStorage.setItem('kilk',0)">Очистить localStorage</button>
+        <hr>
+        <div id="n1" >
+            <h2>Задание 1</h2>
+            <img src="papuga.jpg" alt="image" id="img">
+            <br><button onclick="n1()">Добавить тень!</button>
+            
+        </div>
+        <div id="n2" >
+            <h2> Текст для проверки</h2>
+           <p>Этот текст написан специально для проверки задания</p>
+            <p>Любые совпадение с реальной жизни вымышленные и не специальны</p>
+        </div>
+        <div id="n5" >
+            <h2>Задание 5</h2>
+            Введите число
+            <input type="text" v-model="num"></input>
+            <br>
+            <br>Введите степень
+            <input type="text" v-model="stepin"></input>
+            <button v-on:click="pow">Посчитать</button>
+        </div>
+        <div id="n6" >
+            <h2>Задание 6</h2>
+            Введите тег
+            <input type="text" v-model="tag"></input>
+            <button v-on:click="underline(tag)">Подчеркнуть</button>
+        </div>
+        <div id="n7" >
+            <h2>Задание 7</h2>
+            Введите возраст
+            <input type="text" v-model="age"></input>
+            <button v-on:click="checkAge(age)">Проверка</button>
+            <h3>{{allow}}</h3>
+        </div>
+        <div id="n11" >
+            <h2>Задание 11</h2>
+            Попробуй угадать число:
+            <input type="text" v-model="number_user"></input>
+            <button v-on:click="checkNumber">Проверить</button>
+            <button v-on:click="resetGame">Начать заново</button>
+            <h3>Осталось попыток: {{sproba}} - ({{karta}})</h3><h3>{{rez}}</h3>
+        </div>
+        <div id="n12" >
+            <h2>Задание 12</h2>
+           Сделать заказ:
+            <table>
+                <tr>
+                    <th>Бургер</th>
+                    <th></th>
+                    <th>Добавить сир</th>
+                    <th></th>
+                    <th>Добавить салат</th>
+                    <th></th>
+                    <th>Добавить ветчину</th>
+                </tr>
+                <tr align="center">
+                    <td><button v-on:click="bigB">Большой</button><br>
+                        <button v-on:click="smlB">Маленький</button></td>
+                    <td></td>
+                    <td><button v-on:click="addCheese">+</button></td>
+                    <td></td>
+                    <td><button v-on:click="addSalad">+</button></td>
+                    <td></td>
+                    <td><button v-on:click="addHam">+</button></td>
+                </tr>
+                <tr align="center">
+                    <td>{{big}}{{small}}</td>
+                    <td></td>
+                    <td>{{cheese}}</td>
+                    <td></td>
+                    <td>{{salad}}</td>
+                    <td></td>
+                    <td>{{ham}}</td>
+                </tr>
+            </table>
+            <br><button v-on:click="bill">Посчитать цену и калории</button>
+            <h3>{{rez}}</h3>
+            <h3>Средний чек - {{seredn}}</h3>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="/js/main_func.js"></script>
+    </body>
+</html>

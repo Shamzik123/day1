@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>IF</title>
+    </head>
+    <body>
+        <h1>IF ELSE</h1>
+        <br>
+        <div id="n1" >
+            <h2>Задание 1</h2>
+             Введите номер квартиры 
+            <input type="text" v-model="num"></input>
+            <button v-on:click="checkFlat">Посчитать</button>
+            <h3>{{rez}}</h3>
+        </div>
+        <div id="n2" >
+            <h2>Задание 2</h2>
+             Введите данные:<br>
+            <p><input type="text" v-model="login" ></input>
+            <input type="password" v-model="passw" ></input></p>
+            <button v-on:click="checkUser">Ввести</button>
+            <h3>{{status}}</h3>
+        </div>
+        <div id="n3" >
+            <h2>Задание 3</h2>
+            Введите свой возраст:<br>
+            <p><input type="text" v-model="age" ></input></p>
+            <button v-on:click="checkAge">Ввести</button>
+            <h3>{{allow}}</h3>
+        </div>
+        <div id="n4" >
+            <h2>Задание 4</h2>
+            Введите свой стаж:<br>
+            <p><input type="text" v-model="workAge" ></input></p>
+            <button v-on:click="checkSalary">Ввести</button>
+            <h3>{{adding}}</h3>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="/js/main_IF ELSE.js"></script>
+    </body>
+</html>

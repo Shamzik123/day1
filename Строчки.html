@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Строчки</title>
+    
+    </head>
+    <body>
+        <h1>Работа со строчками</h1>
+        <br>
+        <h2>Задание 4</h2>
+        <div id = "n4">
+        <form>
+            Введите данные:
+            <p>Фамилия: <input type="text" v-model="surname"></p>
+            <p>Имя: <input type="text" v-model="name"></p>
+            <p>Пароль: <input type="password" v-model="password"></p>
+            <p>Email: <input type="text" v-model="email"></p>
+        </form>
+        <button v-on:click="checkForm">Проверка</button>
+        <p>Форма введена правильно - {{isRight}}</p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="/js/main_s.js"></script>
+    </body>
+</html>
